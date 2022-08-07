@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <style>
+        input {
+          width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/search">
+        {% if res %}
+        <input type="text" name="sentence" value='{{ res }}'><br>
+        {% else %}
+        <input type="text" name="sentence" value='Trees are colored _ in the fall'><br>
+        {% endif %}
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
