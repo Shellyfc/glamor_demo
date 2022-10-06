@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+{#    <link rel="stylesheet" href="styles.css">#}
+    <style>
+        input[type=text] {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST" action="/search">
+        A: <input type="text" name="A">
+        B: <input type="text" name="B">
+        C: <input type="text" name="C">
+        D: <input type="text" name="D">
+        <button type="submit">submit</button>
+        {% if result %}
+            {% for item in result %}
+                {% for line in item %}
+                    <br> {{ line }}
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+    </form>
+</body>
+</html>
