@@ -1,0 +1,560 @@
+[
+    {
+        "A": "plane",
+        "B": "wings",
+        "C": "helicopter",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "fly",
+                "topDScore": 0.45810315012931824,
+                "topDRank": 1.0,
+                "topDSentence": "plane is to wings as helicopter is to *fly.",
+                "trueD": "rotor",
+                "trueDScore": 0.0001260895951418206,
+                "trueDRank": 0.0024096385542168677,
+                "trueDSentence": "plane is to wings as helicopter is to *rotor."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " blades",
+                "topDScore": 0.06587351858615875,
+                "topDRank": 1.0,
+                "topDSentence": "plane is to wings as helicopter is to * blades.",
+                "trueD": "rotor",
+                "trueDScore": 0.006021117325872183,
+                "trueDRank": "NA",
+                "trueDSentence": "plane is to wings as helicopter is to *rotor."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " wings",
+                "topDScore": 0.15064974129199982,
+                "topDRank": 1.0,
+                "topDSentence": "plane is to wings as helicopter is to * wings.",
+                "trueD": "rotor",
+                "trueDScore": 0.008399002254009247,
+                "trueDRank": "NA",
+                "trueDSentence": "plane is to wings as helicopter is to *rotor."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "ground",
+                "topDScore": 0.03533319756388664,
+                "topDRank": 1.0,
+                "topDSentence": "plane is to wings as helicopter is to *ground.",
+                "trueD": "rotor",
+                "trueDScore": 0.00018556993745733052,
+                "trueDRank": 0.001652892561983471,
+                "trueDSentence": "plane is to wings as helicopter is to *rotor."
+            },
+            {
+                "model": "gensim",
+                "topD": "copter",
+                "topDScore": 0.6521435976028442,
+                "topDRank": 1.0,
+                "topDSentence": "plane is to wings as helicopter is to *copter.",
+                "trueD": "rotor",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "plane is to wings as helicopter is to *rotor."
+            }
+        ]
+    },
+    {
+        "A": "glass",
+        "B": "shatter",
+        "C": "rubber",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "break",
+                "topDScore": 0.30470743775367737,
+                "topDRank": 1.0,
+                "topDSentence": "glass is to shatter as rubber is to *break.",
+                "trueD": "bounce",
+                "trueDScore": 4.154851194471121e-05,
+                "trueDRank": 0.0021551724137931034,
+                "trueDSentence": "glass is to shatter as rubber is to *bounce."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " crack",
+                "topDScore": 0.16078625619411469,
+                "topDRank": 1.0,
+                "topDSentence": "glass is to shatter as rubber is to * crack.",
+                "trueD": "bounce",
+                "trueDScore": 0.001689861179329455,
+                "trueDRank": "NA",
+                "trueDSentence": "glass is to shatter as rubber is to *bounce."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " crack",
+                "topDScore": 0.17272546887397766,
+                "topDRank": 1.0,
+                "topDSentence": "glass is to shatter as rubber is to * crack.",
+                "trueD": "bounce",
+                "trueDScore": 0.0005130898207426071,
+                "trueDRank": "NA",
+                "trueDSentence": "glass is to shatter as rubber is to *bounce."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "melt",
+                "topDScore": 0.12929071485996246,
+                "topDRank": 1.0,
+                "topDSentence": "glass is to shatter as rubber is to *melt.",
+                "trueD": "bounce",
+                "trueDScore": 0.0002359089849051088,
+                "trueDRank": 0.002717391304347826,
+                "trueDSentence": "glass is to shatter as rubber is to *bounce."
+            },
+            {
+                "model": "gensim",
+                "topD": "stainless_steel",
+                "topDScore": 0.46120351552963257,
+                "topDRank": 1.0,
+                "topDSentence": "glass is to shatter as rubber is to *stainless_steel.",
+                "trueD": "bounce",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "glass is to shatter as rubber is to *bounce."
+            }
+        ]
+    },
+    {
+        "A": "comfortable",
+        "B": "uncomfortable",
+        "C": "clear",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "clear",
+                "topDScore": 0.18090379238128662,
+                "topDRank": 1.0,
+                "topDSentence": "comfortable is to uncomfortable as clear is to *clear.",
+                "trueD": "unclear",
+                "trueDScore": 0.0003779980179388076,
+                "trueDRank": 0.003003003003003003,
+                "trueDSentence": "comfortable is to uncomfortable as clear is to *unclear."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " clear",
+                "topDScore": 0.9465179443359375,
+                "topDRank": 1.0,
+                "topDSentence": "comfortable is to uncomfortable as clear is to * clear.",
+                "trueD": "unclear",
+                "trueDScore": 0.002827714430168271,
+                "trueDRank": "NA",
+                "trueDSentence": "comfortable is to uncomfortable as clear is to *unclear."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " unclear",
+                "topDScore": 0.14103806018829346,
+                "topDRank": 1.0,
+                "topDSentence": "comfortable is to uncomfortable as clear is to * unclear.",
+                "trueD": "unclear",
+                "trueDScore": 0.14103806018829346,
+                "trueDRank": "NA",
+                "trueDSentence": "comfortable is to uncomfortable as clear is to *unclear."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "clear",
+                "topDScore": 0.11691116541624069,
+                "topDRank": 1.0,
+                "topDSentence": "comfortable is to uncomfortable as clear is to *clear.",
+                "trueD": "unclear",
+                "trueDScore": 0.00012044867617078125,
+                "trueDRank": 0.0010395010395010396,
+                "trueDSentence": "comfortable is to uncomfortable as clear is to *unclear."
+            },
+            {
+                "model": "gensim",
+                "topD": "crystal_clear",
+                "topDScore": 0.4772148132324219,
+                "topDRank": 1.0,
+                "topDSentence": "comfortable is to uncomfortable as clear is to *crystal_clear.",
+                "trueD": "unclear",
+                "trueDScore": 0.30193647742271423,
+                "trueDRank": 0.011764705882352941,
+                "trueDSentence": "comfortable is to uncomfortable as clear is to *unclear."
+            }
+        ]
+    },
+    {
+        "A": "sun",
+        "B": "day",
+        "C": "moon",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "night",
+                "topDScore": 0.6814244389533997,
+                "topDRank": 1.0,
+                "topDSentence": "sun is to day as moon is to *night.",
+                "trueD": "night",
+                "trueDScore": 0.6814244389533997,
+                "trueDRank": 1.0,
+                "trueDSentence": "sun is to day as moon is to *night."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " night",
+                "topDScore": 0.9483601450920105,
+                "topDRank": 1.0,
+                "topDSentence": "sun is to day as moon is to * night.",
+                "trueD": "night",
+                "trueDScore": 0.9483601450920105,
+                "trueDRank": 0.08333333333333333,
+                "trueDSentence": "sun is to day as moon is to *night."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " night",
+                "topDScore": 0.9854795336723328,
+                "topDRank": 1.0,
+                "topDSentence": "sun is to day as moon is to * night.",
+                "trueD": "night",
+                "trueDScore": 0.9854795336723328,
+                "trueDRank": 0.08333333333333333,
+                "trueDSentence": "sun is to day as moon is to *night."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "moon",
+                "topDScore": 0.31003105640411377,
+                "topDRank": 1.0,
+                "topDSentence": "sun is to day as moon is to *moon.",
+                "trueD": "night",
+                "trueDScore": 0.17335064709186554,
+                "trueDRank": 0.5,
+                "trueDSentence": "sun is to day as moon is to *night."
+            },
+            {
+                "model": "gensim",
+                "topD": "sunlight",
+                "topDScore": 0.532952606678009,
+                "topDRank": 1.0,
+                "topDSentence": "sun is to day as moon is to *sunlight.",
+                "trueD": "night",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "sun is to day as moon is to *night."
+            }
+        ]
+    },
+    {
+        "A": "Bangkok",
+        "B": "Thailand",
+        "C": "Havana",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "cuba",
+                "topDScore": 0.903121829032898,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.903121829032898,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " Cuba",
+                "topDScore": 0.8134430646896362,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.8134430646896362,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " Cuba",
+                "topDScore": 0.9494141936302185,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.9494141936302185,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "cuba",
+                "topDScore": 0.05478249117732048,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.05478249117732048,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "gensim",
+                "topD": "Caracas",
+                "topDScore": 0.6462927460670471,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *Caracas.",
+                "trueD": "Cuba",
+                "trueDScore": 0.37414106726646423,
+                "trueDRank": 0.003676470588235294,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            }
+        ]
+    },
+    {
+        "A": "Bangkok",
+        "B": "Thailand",
+        "C": "Havana",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "cuba",
+                "topDScore": 0.903121829032898,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.903121829032898,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " Cuba",
+                "topDScore": 0.8134430646896362,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.8134430646896362,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " Cuba",
+                "topDScore": 0.9494141936302185,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.9494141936302185,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "cuba",
+                "topDScore": 0.05478249117732048,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.05478249117732048,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "gensim",
+                "topD": "Caracas",
+                "topDScore": 0.6462927460670471,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *Caracas.",
+                "trueD": "Cuba",
+                "trueDScore": 0.37414106726646423,
+                "trueDRank": 0.003676470588235294,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            }
+        ]
+    },
+    {
+        "A": "Bangkok",
+        "B": "Thailand",
+        "C": "Havana",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "cuba",
+                "topDScore": 0.903121829032898,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.903121829032898,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " Cuba",
+                "topDScore": 0.8134430646896362,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.8134430646896362,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " Cuba",
+                "topDScore": 0.9494141936302185,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.9494141936302185,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "cuba",
+                "topDScore": 0.05478249117732048,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.05478249117732048,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "gensim",
+                "topD": "Caracas",
+                "topDScore": 0.6462927460670471,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *Caracas.",
+                "trueD": "Cuba",
+                "trueDScore": 0.37414106726646423,
+                "trueDRank": 0.003676470588235294,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            }
+        ]
+    },
+    {
+        "A": "Bangkok",
+        "B": "Thailand",
+        "C": "Havana",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "cuba",
+                "topDScore": 0.903121829032898,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.903121829032898,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " Cuba",
+                "topDScore": 0.8134430646896362,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.8134430646896362,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " Cuba",
+                "topDScore": 0.9494141936302185,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to * Cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.9494141936302185,
+                "trueDRank": "NA",
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "cuba",
+                "topDScore": 0.05478249117732048,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *cuba.",
+                "trueD": "Cuba",
+                "trueDScore": 0.05478249117732048,
+                "trueDRank": 1.0,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            },
+            {
+                "model": "gensim",
+                "topD": "Caracas",
+                "topDScore": 0.6462927460670471,
+                "topDRank": 1.0,
+                "topDSentence": "Bangkok is to Thailand as Havana is to *Caracas.",
+                "trueD": "Cuba",
+                "trueDScore": 0.37414106726646423,
+                "trueDRank": 0.003676470588235294,
+                "trueDSentence": "Bangkok is to Thailand as Havana is to *Cuba."
+            }
+        ]
+    },
+    {
+        "A": "yellow",
+        "B": "ripe",
+        "C": "black",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "ripe",
+                "topDScore": 0.5480726957321167,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to ripe as black is to *ripe.",
+                "trueD": "rotten",
+                "trueDScore": 0.00013364484766498208,
+                "trueDRank": 0.0033003300330033004,
+                "trueDSentence": "yellow is to ripe as black is to *rotten."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " ripe",
+                "topDScore": 0.08813763409852982,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to ripe as black is to * ripe.",
+                "trueD": "rotten",
+                "trueDScore": 0.006123311351984739,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to ripe as black is to *rotten."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " black",
+                "topDScore": 0.1579340547323227,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to ripe as black is to * black.",
+                "trueD": "rotten",
+                "trueDScore": 0.012686188332736492,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to ripe as black is to *rotten."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "white",
+                "topDScore": 0.10256902128458023,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to ripe as black is to *white.",
+                "trueD": "rotten",
+                "trueDScore": 0.00014754669973626733,
+                "trueDRank": 0.0019569471624266144,
+                "trueDSentence": "yellow is to ripe as black is to *rotten."
+            },
+            {
+                "model": "gensim",
+                "topD": "white",
+                "topDScore": 0.671758234500885,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to ripe as black is to *white.",
+                "trueD": "rotten",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to ripe as black is to *rotten."
+            }
+        ]
+    }
+]

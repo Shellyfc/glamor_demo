@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Search</title>
-{#    <link rel="stylesheet" href="styles.css">#}
+    <link rel="stylesheet" href="styles.css">
     <style>
         input[type=text] {
             background: transparent;
@@ -13,27 +14,27 @@
     </style>
 </head>
 <body>
-    <form method="POST" action="/search">
-        A: <input type="text" name="A" value="Bangkok">
-        B: <input type="text" name="B" value="Thailand">
-        C: <input type="text" name="C" value="Havana">
-        D: <input type="text" name="D" value="Cuba">
-        <button type="submit">submit</button>
+<form method="POST" action="/search">
+    A: <input type="text" name="A" value="Bangkok">
+    B: <input type="text" name="B" value="Thailand">
+    C: <input type="text" name="C" value="Havana">
+    D: <input type="text" name="D" value="Cuba">
+    <button type="submit">submit</button>
     <br>
-        <form method="POST" action="/search">
+    <form method="POST" action="/search">
         A: <input type="text" name="A" value="comfortable">
         B: <input type="text" name="B" value="uncomfortable">
         C: <input type="text" name="C" value="clear">
         D: <input type="text" name="D" value="unclear">
         <button type="submit">submit</button>
-    <br>
+        <br>
         <form method="POST" action="/search">
-        A: <input type="text" name="A" value="glass">
-        B: <input type="text" name="B" value="shatter">
-        C: <input type="text" name="C" value="rubber">
-        D: <input type="text" name="D" value="bounce">
-        <button type="submit">submit</button>
-        {% if result %}
+            A: <input type="text" name="A" value="glass">
+            B: <input type="text" name="B" value="shatter">
+            C: <input type="text" name="C" value="rubber">
+            D: <input type="text" name="D" value="bounce">
+            <button type="submit">submit</button>
+            {% if result %}
             <table align="center" style="width:100%">
                 <tr>
                     <th>Model</th>
@@ -48,19 +49,19 @@
                 </tr>
                 {% for item in result['B'] %}
                 <tr>
-                        <td>{{ item['model'] }}</td>
-                        <td>{{ item['topD'] }}</td>
-                        <td>{{ item['topDScore'] }}</td>
-                        <td>{{ item['topDRank'] }}</td>
-                        <td>{{ item['trueD'] }}</td>
-                        <td>{{ item['trueDScore'] }}</td>
-                        <td>{{ item['trueDRank'] }}</td>
-                        <td>{{ item['topDSentence'] }}</td>
-                        <td>{{ item['trueDSentence'] }}</td>
+                    <td>{{ item['model'] }}</td>
+                    <td>{{ item['topD'] }}</td>
+                    <td>{{ item['topDScore'] }}</td>
+                    <td>{{ item['topDRank'] }}</td>
+                    <td>{{ item['trueD'] }}</td>
+                    <td>{{ item['trueDScore'] }}</td>
+                    <td>{{ item['trueDRank'] }}</td>
+                    <td>{{ item['topDSentence'] }}</td>
+                    <td>{{ item['trueDSentence'] }}</td>
                 </tr>
                 {% endfor %}
             </table>
-        <br>
+            <br>
             <table align="center" style="width:100%">
                 <tr>
                     <th>Model</th>
@@ -75,19 +76,19 @@
                 </tr>
                 {% for item in result['D'] %}
                 <tr>
-                        <td>{{ item['model'] }}</td>
-                        <td>{{ item['topD'] }}</td>
-                        <td>{{ item['topDScore'] }}</td>
-                        <td>{{ item['topDRank'] }}</td>
-                        <td>{{ item['trueD'] }}</td>
-                        <td>{{ item['trueDScore'] }}</td>
-                        <td>{{ item['trueDRank'] }}</td>
-                        <td>{{ item['topDSentence'] }}</td>
-                        <td>{{ item['trueDSentence'] }}</td>
+                    <td>{{ item['model'] }}</td>
+                    <td>{{ item['topD'] }}</td>
+                    <td>{{ item['topDScore'] }}</td>
+                    <td>{{ item['topDRank'] }}</td>
+                    <td>{{ item['trueD'] }}</td>
+                    <td>{{ item['trueDScore'] }}</td>
+                    <td>{{ item['trueDRank'] }}</td>
+                    <td>{{ item['topDSentence'] }}</td>
+                    <td>{{ item['trueDSentence'] }}</td>
                 </tr>
                 {% endfor %}
             </table>
-        {% endif %}
-    </form>
+            {% endif %}
+        </form>
 </body>
 </html>
