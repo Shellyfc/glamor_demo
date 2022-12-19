@@ -494,5 +494,439 @@
                 "trueDSentence": "yellow is to *ripe as black is to rotten."
             }
         ]
+    },
+    {
+        "A": "brick",
+        "C": "coin",
+        "D": "screwdriver",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "punch",
+                "topDScore": 0.021334698423743248,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *punch as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.020163748413324356,
+                "trueDRank": 0.5,
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " hammer",
+                "topDScore": 0.3060426414012909,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to * hammer as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.0015787845477461815,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " mortar",
+                "topDScore": 0.5158904790878296,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to * mortar as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.023519329726696014,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "hand",
+                "topDScore": 0.01695072464644909,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *hand as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.0037582500372081995,
+                "trueDRank": 0.037037037037037035,
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "gensim",
+                "topD": "bricks",
+                "topDScore": 0.5153805613517761,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *bricks as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            }
+        ]
+    },
+    {
+        "A": "brick",
+        "C": "coin",
+        "D": "screwdriver",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "punch",
+                "topDScore": 0.021334698423743248,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *punch as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.020163748413324356,
+                "trueDRank": 0.5,
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " hammer",
+                "topDScore": 0.3060426414012909,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to * hammer as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.0015787845477461815,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " mortar",
+                "topDScore": 0.5158904790878296,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to * mortar as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.023519329726696014,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "hand",
+                "topDScore": 0.01695072464644909,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *hand as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0.0037582500372081995,
+                "trueDRank": 0.037037037037037035,
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            },
+            {
+                "model": "gensim",
+                "topD": "bricks",
+                "topDScore": 0.5153805613517761,
+                "topDRank": 1.0,
+                "topDSentence": "brick is to *bricks as coin is to screwdriver.",
+                "trueD": "hammer",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "brick is to *hammer as coin is to screwdriver."
+            }
+        ]
+    },
+    {
+        "A": "black",
+        "C": "white",
+        "D": "white",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "black",
+                "topDScore": 0.3829447627067566,
+                "topDRank": 1.0,
+                "topDSentence": "black is to *black as white is to white.",
+                "trueD": "black",
+                "trueDScore": 0.3829447627067566,
+                "trueDRank": 1.0,
+                "trueDSentence": "black is to *black as white is to white."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " black",
+                "topDScore": 0.9823671579360962,
+                "topDRank": 1.0,
+                "topDSentence": "black is to * black as white is to white.",
+                "trueD": "black",
+                "trueDScore": 0.326710045337677,
+                "trueDRank": 0.3333333333333333,
+                "trueDSentence": "black is to *black as white is to white."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " black",
+                "topDScore": 0.9792781472206116,
+                "topDRank": 1.0,
+                "topDSentence": "black is to * black as white is to white.",
+                "trueD": "black",
+                "trueDScore": 0.3728623390197754,
+                "trueDRank": 0.05263157894736842,
+                "trueDSentence": "black is to *black as white is to white."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "white",
+                "topDScore": 0.41369566321372986,
+                "topDRank": 1.0,
+                "topDSentence": "black is to *white as white is to white.",
+                "trueD": "black",
+                "trueDScore": 0.32419270277023315,
+                "trueDRank": 0.5,
+                "trueDSentence": "black is to *black as white is to white."
+            },
+            {
+                "model": "gensim",
+                "topD": "Responded_Letterman_How",
+                "topDScore": 0.6182776093482971,
+                "topDRank": 1.0,
+                "topDSentence": "black is to *Responded_Letterman_How as white is to white.",
+                "trueD": "black",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "black is to *black as white is to white."
+            }
+        ]
+    },
+    {
+        "A": "king",
+        "C": "queen",
+        "D": "women",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "men",
+                "topDScore": 0.9349104166030884,
+                "topDRank": 1.0,
+                "topDSentence": "king is to *men as queen is to women.",
+                "trueD": "man",
+                "trueDScore": 0.021915536373853683,
+                "trueDRank": 0.5,
+                "trueDSentence": "king is to *man as queen is to women."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " men",
+                "topDScore": 0.6716798543930054,
+                "topDRank": 1.0,
+                "topDSentence": "king is to * men as queen is to women.",
+                "trueD": "man",
+                "trueDScore": 0.19099661707878113,
+                "trueDRank": 0.001718213058419244,
+                "trueDSentence": "king is to *man as queen is to women."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " men",
+                "topDScore": 0.9578557014465332,
+                "topDRank": 1.0,
+                "topDSentence": "king is to * men as queen is to women.",
+                "trueD": "man",
+                "trueDScore": 0.03794804587960243,
+                "trueDRank": 0.0029154518950437317,
+                "trueDSentence": "king is to *man as queen is to women."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "men",
+                "topDScore": 0.27774935960769653,
+                "topDRank": 1.0,
+                "topDSentence": "king is to *men as queen is to women.",
+                "trueD": "man",
+                "trueDScore": 0.043774623423814774,
+                "trueDRank": 0.25,
+                "trueDSentence": "king is to *man as queen is to women."
+            },
+            {
+                "model": "gensim",
+                "topD": "monarch",
+                "topDScore": 0.5956358909606934,
+                "topDRank": 1.0,
+                "topDSentence": "king is to *monarch as queen is to women.",
+                "trueD": "man",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "king is to *man as queen is to women."
+            }
+        ]
+    },
+    {
+        "A": "sky",
+        "C": "grass",
+        "D": "green",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "blue",
+                "topDScore": 0.3045167624950409,
+                "topDRank": 1.0,
+                "topDSentence": "sky is to *blue as grass is to green.",
+                "trueD": "blue",
+                "trueDScore": 0.3045167624950409,
+                "trueDRank": 1.0,
+                "trueDSentence": "sky is to *blue as grass is to green."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " sky",
+                "topDScore": 0.11924266815185547,
+                "topDRank": 1.0,
+                "topDSentence": "sky is to * sky as grass is to green.",
+                "trueD": "blue",
+                "trueDScore": 0.3595564365386963,
+                "trueDRank": 0.0007861635220125787,
+                "trueDSentence": "sky is to *blue as grass is to green."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " earth",
+                "topDScore": 0.16396601498126984,
+                "topDRank": 1.0,
+                "topDSentence": "sky is to * earth as grass is to green.",
+                "trueD": "blue",
+                "trueDScore": 0.845750629901886,
+                "trueDRank": 0.0008244023083264633,
+                "trueDSentence": "sky is to *blue as grass is to green."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "blue",
+                "topDScore": 0.4619331955909729,
+                "topDRank": 1.0,
+                "topDSentence": "sky is to *blue as grass is to green.",
+                "trueD": "blue",
+                "trueDScore": 0.4619331955909729,
+                "trueDRank": 1.0,
+                "trueDSentence": "sky is to *blue as grass is to green."
+            },
+            {
+                "model": "gensim",
+                "topD": "heavens",
+                "topDScore": 0.4407709836959839,
+                "topDRank": 1.0,
+                "topDSentence": "sky is to *heavens as grass is to green.",
+                "trueD": "blue",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "sky is to *blue as grass is to green."
+            }
+        ]
+    },
+    {
+        "A": "man",
+        "C": "woman",
+        "D": "queen",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "king",
+                "topDScore": 0.2837185859680176,
+                "topDRank": 1.0,
+                "topDSentence": "man is to *king as woman is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.2837185859680176,
+                "trueDRank": 1.0,
+                "trueDSentence": "man is to *king as woman is to queen."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " king",
+                "topDScore": 0.5695425868034363,
+                "topDRank": 1.0,
+                "topDSentence": "man is to * king as woman is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.11950822174549103,
+                "trueDRank": 0.0014771048744460858,
+                "trueDSentence": "man is to *king as woman is to queen."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " king",
+                "topDScore": 0.3325812518596649,
+                "topDRank": 1.0,
+                "topDSentence": "man is to * king as woman is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.028218192979693413,
+                "trueDRank": 0.0009267840593141798,
+                "trueDSentence": "man is to *king as woman is to queen."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "king",
+                "topDScore": 0.24124589562416077,
+                "topDRank": 1.0,
+                "topDSentence": "man is to *king as woman is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.24124589562416077,
+                "trueDRank": 1.0,
+                "trueDSentence": "man is to *king as woman is to queen."
+            },
+            {
+                "model": "gensim",
+                "topD": "teenage_girl",
+                "topDScore": 0.5720165371894836,
+                "topDRank": 1.0,
+                "topDSentence": "man is to *teenage_girl as woman is to queen.",
+                "trueD": "king",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "man is to *king as woman is to queen."
+            }
+        ]
+    },
+    {
+        "A": "men",
+        "C": "women",
+        "D": "queen",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "king",
+                "topDScore": 0.36640411615371704,
+                "topDRank": 1.0,
+                "topDSentence": "men is to *king as women is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.36640411615371704,
+                "trueDRank": 1.0,
+                "trueDSentence": "men is to *king as women is to queen."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " king",
+                "topDScore": 0.5953835248947144,
+                "topDRank": 1.0,
+                "topDSentence": "men is to * king as women is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.09991183876991272,
+                "trueDRank": 0.002066115702479339,
+                "trueDSentence": "men is to *king as women is to queen."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " king",
+                "topDScore": 0.15822775661945343,
+                "topDRank": 1.0,
+                "topDSentence": "men is to * king as women is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.051966458559036255,
+                "trueDRank": 0.0005515719801434088,
+                "trueDSentence": "men is to *king as women is to queen."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "king",
+                "topDScore": 0.2524719834327698,
+                "topDRank": 1.0,
+                "topDSentence": "men is to *king as women is to queen.",
+                "trueD": "king",
+                "trueDScore": 0.2524719834327698,
+                "trueDRank": 1.0,
+                "trueDSentence": "men is to *king as women is to queen."
+            },
+            {
+                "model": "gensim",
+                "topD": "Men",
+                "topDScore": 0.5782375931739807,
+                "topDRank": 1.0,
+                "topDSentence": "men is to *Men as women is to queen.",
+                "trueD": "king",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "men is to *king as women is to queen."
+            }
+        ]
     }
 ]

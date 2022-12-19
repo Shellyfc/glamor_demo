@@ -1,0 +1,56 @@
+[
+    {
+        "email": "chufang@usc.edu",
+        "A": "black",
+        "B": "black",
+        "C": "white",
+        "D": "white",
+        "time": "2022-11-14 13:20:17.603848",
+        "vote": 2
+    },
+    {
+        "email": "shellyfc625@gmail.com",
+        "A": "king",
+        "B": "man",
+        "C": "queen",
+        "D": "women",
+        "time": "2022-11-14 14:08:43.382744",
+        "vote": 1
+    },
+    {
+        "email": "shellyfc625@gmail.com",
+        "A": "sky",
+        "B": "blue",
+        "C": "grass",
+        "D": "green",
+        "time": "2022-12-05 11:21:26.901358",
+        "vote": 1
+    },
+    {
+        "email": "shellyfc625@gmail.com",
+        "A": "man",
+        "B": "king",
+        "C": "woman",
+        "D": "queen",
+        "time": "2022-12-05 11:22:56.564590",
+        "vote": 2
+    },
+    {
+        "email": "shellyfc625@gmail.com",
+        "A": "men",
+        "B": "king",
+        "C": "women",
+        "D": "queen",
+        "time": "2022-12-05 11:25:45.943183",
+        "vote": 3
+    },
+    {
+        "email": null,
+        "A": null,
+        "B": null,
+        "C": null,
+        "D": null,
+        "time": "2022-12-05 11:47:07.786413",
+        "vote": 1
+    }
+]

@@ -1,12 +1,27 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 import TableView from '../views/TableView.vue'
+import LoginView from "../views/LoginView.vue";
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/HomeView.vue"),
+    // meta: {
+    //   authRequired: true,
+    // },
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/register",
+    name: "register",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/RegisterView.vue"),
   },
   {
     path: '/about',
@@ -20,6 +35,15 @@ const routes = [
     path: '/tableView',
     name: 'tableView',
     component: TableView,
+  },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/DashboardView.vue"),
+    meta: {
+      authRequired: true,
+    },
   },
 ]
 
