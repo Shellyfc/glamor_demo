@@ -161,7 +161,9 @@ def saveUserDate(email, formA, formB, formC, formD):
 
 
 # when user input a ABCD, save B and D separately.
-def saveUserDateForBAndD(email, formA, formB, formC, formD):
+def saveUserDataForBAndD(email, formA, formB, formC, formD):
+    if not email or email == '':
+        email = 'NO_LOG_IN'
     with open("userDataB.json", 'r+') as file:
         items = json.load(file)
         stop = False
@@ -172,21 +174,26 @@ def saveUserDateForBAndD(email, formA, formB, formC, formD):
             if item['A'] == formA and item['C'] == formC and item['D'] == formD:
                 # item found
                 for answer, anwerInfo in item['B'].items():
-                    if answer == formD:
+                    if answer == formB:
                         if email not in anwerInfo['emails']:
                             anwerInfo['vote'] += 1
                             anwerInfo['emails'].append(email)
-                            json.dump(item, file, indent=4)
+                            # json.dump(item, file, indent=4)
                             stop = True
                         break
-                # ABC exits, but formD does not exist in item['D']
-                item['B'][formB] = {'emails': [email], 'vote': 1}
-                json.dump(item, file, indent=4)
+                # ABC exits, but formB does not exist in item['B']
+                if not stop:
+                    item['B'][formB] = {'emails': [email], 'vote': 1}
                 stop = True
                 break
         # matching ABC not found, add new item
         if not stop:
             items.append({"A": formA, "C": formC, "D": formD, "B": {formB: {'emails': [email], 'vote': 1}}})
+            # file.seek(0)
+            # # convert back to json.
+            # json.dump(items, file, indent=4)
+        file.seek(0)
+        json.dump(items, file, indent=4)
 
     with open("userDataD.json", 'r+') as file:
         items = json.load(file)
@@ -202,19 +209,22 @@ def saveUserDateForBAndD(email, formA, formB, formC, formD):
                         if email not in anwerInfo['emails']:
                             anwerInfo['vote'] += 1
                             anwerInfo['emails'].append(email)
-                            json.dump(item, file, indent=4)
+                            # json.dump(item, file, indent=4)
                             stop = True
                         break
                 # ABC exits, but formD does not exist in item['D']
-                item['D'][formD] = {'emails': [email], 'vote': 1}
-                json.dump(item, file, indent=4)
+                if not stop:
+                    item['D'][formD] = {'emails': [email], 'vote': 1}
                 stop = True
                 break
         # matching ABC not found, add new item
         if not stop:
             items.append({"A": formA, "B": formB, "C": formC, "D": {formD: {'emails': [email], 'vote': 1}}})
-
-
+            # file.seek(0)
+            # convert back to json.
+            # json.dump(items, file, indent=4)
+        file.seek(0)
+        json.dump(items, file, indent=4)
 
 @cross_origin()
 def fillMaskWithModels(content, sentence, models):
@@ -226,7 +236,7 @@ def fillMaskWithModels(content, sentence, models):
     formD = content.get('formD')
     print(email, formA, formB, formC, formD)
     saveUserDate(email, formA, formB, formC, formD)
-    saveUserDateForBAndD(email, formA, formB, formC, formD)
+    saveUserDataForBAndD(email, formA, formB, formC, formD)
     localRes = searchLocalJson(formA, formB, formC, formD)
     if localRes['B'] != [] and localRes['D'] != []:
         return localRes
