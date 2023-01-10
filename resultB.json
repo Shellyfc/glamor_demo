@@ -928,5 +928,129 @@
                 "trueDSentence": "men is to *king as women is to queen."
             }
         ]
+    },
+    {
+        "A": "yellow",
+        "C": "black",
+        "D": "rot",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "rot",
+                "topDScore": 0.4875674545764923,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *rot as black is to rot.",
+                "trueD": "rife",
+                "trueDScore": 6.611104197418172e-08,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to rot."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " die",
+                "topDScore": 0.32291728258132935,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to * die as black is to rot.",
+                "trueD": "rife",
+                "trueDScore": 0.0032025515101850033,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to rot."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " shine",
+                "topDScore": 0.1055946797132492,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to * shine as black is to rot.",
+                "trueD": "rife",
+                "trueDScore": 0.0008220625459216535,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to rot."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "rot",
+                "topDScore": 0.12420486658811569,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *rot as black is to rot.",
+                "trueD": "rife",
+                "trueDScore": 3.7198876157162886e-07,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to rot."
+            },
+            {
+                "model": "gensim",
+                "topD": "white",
+                "topDScore": 0.688052773475647,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *white as black is to rot.",
+                "trueD": "rife",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to rot."
+            }
+        ]
+    },
+    {
+        "A": "yellow",
+        "C": "black",
+        "D": "dead",
+        "Data": [
+            {
+                "model": "bert-base-uncased",
+                "topD": "live",
+                "topDScore": 0.28509625792503357,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *live as black is to dead.",
+                "trueD": "rife",
+                "trueDScore": 3.676151649756321e-08,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to dead."
+            },
+            {
+                "model": "roberta-base",
+                "topD": " living",
+                "topDScore": 0.1850704699754715,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to * living as black is to dead.",
+                "trueD": "rife",
+                "trueDScore": 0.0032025515101850033,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to dead."
+            },
+            {
+                "model": "roberta-large",
+                "topD": " life",
+                "topDScore": 0.17112983763217926,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to * life as black is to dead.",
+                "trueD": "rife",
+                "trueDScore": 0.0038276026025414467,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to dead."
+            },
+            {
+                "model": "vocab-transformers/distilbert-word2vec_256k-MLM_1M",
+                "topD": "light",
+                "topDScore": 0.05511697009205818,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *light as black is to dead.",
+                "trueD": "rife",
+                "trueDScore": 1.6235077282544808e-06,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to dead."
+            },
+            {
+                "model": "gensim",
+                "topD": "white",
+                "topDScore": 0.6428583860397339,
+                "topDRank": 1.0,
+                "topDSentence": "yellow is to *white as black is to dead.",
+                "trueD": "rife",
+                "trueDScore": 0,
+                "trueDRank": "NA",
+                "trueDSentence": "yellow is to *rife as black is to dead."
+            }
+        ]
     }
 ]

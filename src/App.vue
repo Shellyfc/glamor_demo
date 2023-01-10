@@ -2,7 +2,8 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/tableView">TableView</router-link> |
+    <router-link to="/tableView">Search</router-link> |
+    <router-link to="/play">Play</router-link>
     <div class="nav-el">
       <!-- <a href="https://github.com/vladpostu/vue-firebase-auth" target="blank"
           >GitHub Repo</a

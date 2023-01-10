@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import TableView from '../views/TableView.vue'
 import LoginView from "../views/LoginView.vue";
+import PlayView from "../views/PlayView.vue";
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: '/tableView',
     name: 'tableView',
     component: TableView,
+  },
+  {
+    path: '/play',
+    name: 'play',
+    component: PlayView,
   },
   {
     path: "/dashboard",

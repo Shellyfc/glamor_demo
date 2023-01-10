@@ -1,0 +1,44 @@
+[
+    {
+        "A": "yellow",
+        "C": "black",
+        "D": "rot",
+        "B": {
+            "rife": {
+                "emails": [
+                    "shellyfc625@gmail.com",
+                    "chufang@usc.edu",
+                    "NO_LOG_IN"
+                ],
+                "vote": 3
+            }
+        }
+    },
+    {
+        "A": "yellow",
+        "C": "black",
+        "D": "dead",
+        "B": {
+            "rife": {
+                "emails": [
+                    "shellyfc625@gmail.com"
+                ],
+                "vote": 1
+            }
+        }
+    },
+    {
+        "A": "man",
+        "C": "woman",
+        "D": "queen",
+        "B": {
+            "king": {
+                "emails": [
+                    "NO_LOG_IN",
+                    "chufang@usc.edu"
+                ],
+                "vote": 2
+            }
+        }
+    }
+]
